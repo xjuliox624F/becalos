@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_index.css">
+    <title>Vendedores de Autos</title>
+   
+</head>
+<body>
+    <header>
+        <h1>Vendedores de Autos</h1>
+        <p>Encuentra el auto de tus sueños al mejor precio</p>
+    </header>
+
+    <div class="container">
+        <div class="car-card">
+            <img src="https://via.placeholder.com/150" alt="Auto deportivo">
+            <div>
+                <h3>Auto Deportivo</h3>
+                <p>Precio: $1,200,000 MXN</p>
+                <button onclick="solicitarInfo('Auto Deportivo')">Solicitar Información</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="https://via.placeholder.com/150" alt="SUV Familiar">
+            <div>
+                <h3>SUV Familiar</h3>
+                <p>Precio: $850,000 MXN</p>
+                <button onclick="solicitarInfo('SUV Familiar')">Solicitar Información</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="https://via.placeholder.com/150" alt="Sedán Ejecutivo">
+            <div>
+                <h3>Sedán Ejecutivo</h3>
+                <p>Precio: $650,000 MXN</p>
+                <button onclick="solicitarInfo('Sedán Ejecutivo')">Solicitar Información</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Vendedores de Autos &copy; 2024</p>
+    </footer>
+
+    <script>
+        function solicitarInfo(modelo) {
+            alert(`Has solicitado más información sobre el ${modelo}. Un asesor se pondrá en contacto contigo pronto.`);
+        }
+    </script>
+</body>
+</html>
